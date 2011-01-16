@@ -1,0 +1,143 @@
+body #adminbar a img{
+	border:0;
+}
+
+body #adminbar *{
+	display:block !important;
+	visibility:visible !important;
+	margin:0;
+	padding:0;
+}
+
+body #adminbar{
+	background:url(http://g.exteen.com/i/admin_bck.png) repeat-x #262626 !important;
+	border:none !important;
+	color:#FFF !important;
+	display:block !important;
+	font:12px Verdana,Tahoma, "MS Sans Serif" !important;
+	height:30px !important;
+	left:0px !important;
+	margin:0px !important;
+	padding:0px !important;
+	position:relative !important;
+	text-align:left !important;
+	text-decoration:none !important;
+	text-indent:0px !important;
+	top:0px !important;
+	width:100% !important;
+	visibility:visible !important;
+	z-index:1001 !important;
+}
+
+body #adminbar ul li a:link, body #adminbar ul li a:visited{
+	font-weight:normal !important;;
+	color:#DDD !important;
+}
+
+body #adminbar ul li a:hover{
+	background:url(http://g.exteen.com/i/admin_bck_on.png) repeat-x #555555 !important;
+	color:#FFC !important;
+	text-decoration:none !important;
+	border:none !important;
+	cursor:pointer !important;
+}
+
+body #adminbar ul li a:active{
+	color:#ecf4f7 !important;
+	text-decoration:none !important;
+	border:none !important;
+}
+
+body #adminbar ul{
+	visibility:visible !important;
+	display:block !important;
+}
+
+body #adminbar ul li{
+	display:inline;
+	float:left;
+	position:relative;
+}
+
+body #adminbar ul.right{
+	position:absolute;
+	right:0px;
+}
+
+body #adminbar ul li a{
+	display:block;
+	padding:7px 14px 7px 14px;
+	text-decoration:none;
+	border:none !important;
+}
+
+body #adminbar ul #home a{
+	padding:1px 5px 0px 5px !important;
+	margin:0px;
+}
+
+body #adminbar ul li span.heart{
+	background:url(http://g.exteen.com/i/heart.gif) no-repeat !important;
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:4px;
+}
+
+body #adminbar ul li span.heartadded{
+	background:url(http://g.exteen.com/i/heart_2.gif) no-repeat !important;
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:4px;
+}
+
+body #adminbar ul li span.wow{
+	background:url(http://g.exteen.com/i/wow.gif) no-repeat !important;
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:4px;
+}
+
+body #adminbar ul li span.next{
+	background:url(http://g.exteen.com/i/next.gif) no-repeat !important;
+	width:12px;
+	height:12px;
+	float:left;
+	margin:2px 4px 0px 0px;
+}
+
+body #adminbar ul li span.noread a:link,body #adminbar ul li span.noread a:visited{
+color:#FFCC00 !important;
+}
+
+
+body {
+	margin:0pt !important;
+	padding:0pt !important;
+	border:0px !important;
+}
+
+.comment .info img.avatar{
+  width:24px;
+}
+
+.comment .info img{
+  width:auto;
+}
+
+#commentform p.formrow img{
+  margin-right:2px;
+}
+
+/*blogactionday*/
+.badbubble{
+  position:absolute;
+  top:25px;
+  right:0px;
+  width:165px;
+  height:40px;
+  background:url(http://www.exteen.com/tmpi/badbubble.png) no-repeat left top;
+  text-indent:-6000px;
+}
