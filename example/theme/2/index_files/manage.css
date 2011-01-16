@@ -1,0 +1,1485 @@
+/*Management System Style*/
+/*Copyright by Etceto co,ltd. 2007*/
+/*Color
+	Dark blue:178aa5;
+	Exteen blue:61b1c5;
+	Light Blue(ahover):30c2e7;
+	Dark grey:#636363;
+	Lighter Blue:b6e3ee;
+	Lightest Blue:#e2f8fd;
+*/
+/*======================================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ul, ol, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	font-size:100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight:normal;
+}
+
+body{
+	background:#FFF url(http://g.exteen.com/i/m/bck_allmanage.png) repeat-x top center;
+	font:12px Trebuchet MS,Helvetica,Tahoma,"MS Sans Serif";
+	text-align:center;
+}
+
+input,select{
+	font:12px Verdana,Tahoma,"MS Sans Serif";	
+}
+
+a:link, a:visited{
+	color:#178aa5;
+}
+
+a:hover,a:active{
+	color:#30c2e7;
+}
+
+.box{
+	margin:auto;
+	width:935px;
+	text-align:left;
+}
+
+.clear{
+	clear:both;
+	font-size:1px;
+	line-height:1px;
+	margin:0px;
+	padding:0px;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.center{
+	text-align:center;
+}
+
+.alignright{
+	text-align:right;
+}
+
+
+/*======================================================================*/
+
+#header{
+	background:#b6e3ee url(http://g.exteen.com/i/m/bck_header.png) top left repeat-x;
+	margin:0px;
+	max-height:150px;
+	min-height:72px;
+	float:left;
+	position:relative;
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid white;
+}
+
+#header h1 a{
+	color:#444;
+	font-size:18px;
+	font-weight:bold;
+	position:relative;
+	text-decoration:none;
+	top:24px;
+	left:10px;
+}
+
+#header h1 a:hover,#header h1 a:active{
+	color:#30c2e7;
+}
+
+#personalmenu{
+	font:11px Verdana, Tahoma, "MS Sans Serif";
+	float:right;
+	text-align:right;
+}
+
+#personalmenu span{
+	float:right;
+}
+
+#personalmenu img{
+	border:1px solid white;
+	float:right;
+	margin-left:5px;
+}
+
+
+/*======================================================================*/
+#mainnav{
+	float:left;
+	list-style:none;
+	margin:12px 0px 0px 5px;
+	padding:0;	
+	position:relative;
+	width:930px;
+}
+
+#mainnav li{
+	background:url(http://g.exteen.com/i/m/bck_mainnav.png) top left no-repeat;
+	display:block;
+	float:left;
+	height:30px;
+	position:relative;
+	text-align:center;
+	margin:0px 5px 0px 0px;
+	width:105px;
+}
+
+#mainnav li.right{
+	margin:0px;
+	position:absolute;
+	right:0px;
+}
+
+#mainnav li.selected{
+	background:url(http://g.exteen.com/i/m/bck_mainnav.png) bottom left no-repeat;
+}
+
+#mainnav li.selected a{
+	font-weight:bold;
+}
+
+#mainnav li a{
+	color:#FFF;
+	display:block;
+	font-family:Verdana, Tahoma, "MS Sans Serif";
+	text-decoration:none;
+	padding:6px 0px 10px 0px;
+}
+
+#mainnav li a:hover{
+	background:url(http://g.exteen.com/i/m/bck_mainnav.png) top right no-repeat;
+}
+
+#mainnav li.selected a:hover{
+	background:url(http://g.exteen.com/i/m/bck_mainnav.png) bottom left no-repeat;
+}
+
+/*======================================================================*/
+.seperator{
+	background:url(http://g.exteen.com/i/m/bck_seperator.png) repeat-x;
+	font-size:1px;
+	float:left;
+	height:9px;
+	width:100%;
+	display:inline;
+}
+/*======================================================================*/
+#secondnav{
+	float:left;
+	padding-bottom:5px;
+	background:url(http://g.exteen.com/i/m/bck_hdot.gif) bottom repeat-x;
+	margin-bottom:5px;
+	width:100%;
+	display:inline;
+}
+
+#secondnav li{
+	display:inline;
+	float:left;
+	margin:5px 4px 0px 4px;	
+}
+
+#secondnav li.left{
+	margin-left:0px;
+}
+
+#secondnav li.selected{
+	background:url(http://g.exteen.com/i/m/bck_secondnav.png) no-repeat;
+}
+
+#secondnav li.selected a{
+	background:url(http://g.exteen.com/i/m/bck_secondnav_capoff.png) right top no-repeat;
+	color:#FFF;
+	font-weight:bold;
+}
+
+#secondnav li a{
+	color:#636363;
+	display:block;
+	font-family:Verdana, Tahoma, "MS Sans Serif";
+	text-decoration:none;
+	padding:3px 20px 4px 20px;
+}
+
+#secondnav li a:hover{
+	color:#6aa73f;
+}
+
+#secondnav li.selected a:hover{
+	color:#FFF;
+}
+
+/*======================================================================*/
+.innerbox{
+	float:left;
+	width:935px;
+	margin:5px 5px 0px 5px;
+}
+
+#main{
+	color:#636363;
+}
+
+#main h1{
+	color:#333;
+	font-size:18px;
+	margin:-18px 0px 8px 0px;
+	position:relative;
+	width:50%;
+}
+
+#main h1 a,#main h1 a:link,#main h1 a:visited{
+	text-decoration:underline;
+	color:#178aa5;
+	cursor:pointer;
+}
+
+#main h1 a:hover,#main h1 a:active{
+	color:#30c2e7;
+} 
+
+#main label{
+	display:inline;
+	font-size:13px;
+}
+
+#main .lefter{
+	float:left;
+	width:660px;
+	/*border:1px solid red;/**/
+}
+
+#main .righter{
+	float:right;
+	width:270px;
+	/*border:1px solid blue;/**/
+}
+
+#main .zone{
+	float:left;
+	margin:3px;
+}
+
+#main .rzone{
+	float:right;
+	margin:3px;
+}
+
+#main p.row{
+	margin:3px 0px 3px 0px;
+}
+
+#main input.bigbutton{
+	font-size:13px;
+	margin-right:2px;
+	padding:4px;
+}
+
+#main .options{
+	width:650px;
+}
+
+#main .optionsbox{
+	background:url(http://g.exteen.com/i/m/bck_zone.jpg) top repeat-x;
+	border-left:1px solid #b6e3ee;
+	border-top:1px solid #b6e3ee;
+	display:block;
+	float:left;
+	width:308px !important;
+	width:320px;
+	padding:5px;
+	margin-top:10px;
+}
+
+#main .first{
+	margin-right:10px;
+}
+
+#main .optionsbox h3{
+	background:url(http://g.exteen.com/i/m/icon_optionalmenu.gif) no-repeat;
+	color:#178aa5;
+	font-size:14px;
+	padding:0px 0px 3px 20px;
+}
+
+/*======================================================================*/
+/*Just new entry page*/
+#main input.entrytitle{
+	font-size:18px;
+	width:360px;
+}
+
+#main input.entryrecommend{
+}
+
+#main textarea.entrycontent{
+	font-size:12px;
+	width:650px;
+	height:350px;
+}
+
+#main select.entrycategory{
+	font-size:18px;
+	width:200px;
+}
+
+#main input.entrytag{
+	width:320px;
+}
+
+#main .optionsbox h3.option-comment{background-position:0px 0px;}
+#main .optionsbox h3.option-club{background-position:0px -32px;}
+#main .optionsbox h3.option-timepost{background-position:0px -64px;}
+#main .optionsbox h3.option-password{background-position:0px -96px;}
+#main .optionsbox h3.option-revision{background-position:0px -128px;}
+#main .optionsbox h3.option-maps{background-position:0px -160px;}
+/*======================================================================*/
+
+#main #browserwrapper{
+	background:url(http://g.exteen.com/i/m/bck_newentry_filebrowser.png) top no-repeat;
+	width:260px;
+	float:left;
+}
+
+#main #browsercontent, #main #browserupload, #main #browserinfo{
+	float:left;
+	width:260px;
+}
+
+#main #browsercontent{
+	margin-top:32px;
+	overflow:auto;
+}
+
+.browsercontent{
+	height:280px;
+}
+
+#main #browsercontent ul{
+	margin:3px 3px 3px 5px;
+}
+
+#main #browsercontent li{
+	display:block;
+	float:left;
+	font-size:11px;
+	padding:3px 3px 2px 3px !important;
+	padding:2px 3px 1px 3px;
+	width:96%;
+}
+
+#main #browsercontent a{
+	text-decoration:none;
+}
+
+#main #browsercontent li.even{
+	background-color:#F3F3F3;
+}
+
+#main #browsercontent li.selected{
+	border-bottom:1px solid #178aa5;
+	background:url(http://g.exteen.com/i/m/bck_filebrowser_selected.png) repeat-x top left;
+	color:#FFF;
+}
+
+#main #browsercontent span.name a:link,#main #browsercontent span.name a:visited{
+	color:#636363;
+	display:block;
+	width:160px;
+}
+
+#main #browsercontent span.name a:hover,#main #browsercontent span.name a:active{
+	color:#30c2e7;
+}
+
+#main #browsercontent li.selected a, #main #browsercontent li.selected span.name a:link,#main #browsercontent li.selected span.name a:visited{
+	color:#FFF;
+}
+
+#main #browsercontent li.selected a:hover, #main #browsercontent li.selected span.name a:hover{
+	color:#b6e3ee;
+}
+
+#main #browsercontent span.name{
+	background:url(http://g.exteen.com/i/m/icon_filetype.gif) no-repeat;
+	padding:0px 0px 2px 20px;
+	float:left;
+}
+#main #browsercontent span.parent{color:#178aa5;font-weight:bold;background-color:#e4f7ff;}
+
+#main #browsercontent span.folder{background-position:-16px -32px;}
+#main #browsercontent span.newfolder{background-position:-16px -64px;}
+#main #browsercontent span.folderup{background-position:-16px -192px;}
+#main #browsercontent span.jpg, #main #browsercontent span.gif, #main #browsercontent span.png{background-position:-16px -96px;}
+#main #browsercontent span.swf{background-position:-16px -160px;}
+#main #browsercontent span.html{background-position:-16px -128px;}
+
+#main #browsercontent span.folder a,#main #browsercontent span.newfolder a,#main #browsercontent span.folderup a{font-weight:bold}
+
+#main #browsercontent span.tool{
+	float:right;
+	text-align:right;
+	width:36px;
+}
+
+#main #browsercontent span.tool a.delete, #main #browsercontent span.tool a.send{
+	display:block;
+	height:0pt;
+	overflow:hidden;
+	width:16px;
+	padding-top:16px;
+	background:url(http://g.exteen.com/i/m/icon_filetype.gif) no-repeat;
+	background-position:0px -32px;
+ 	float:right;	
+	/*Fix IE Bug*/
+	padding-left:0px !important;
+	padding-left:30px;
+	font-size:100% !important;
+	font-size:0px;
+}
+
+#main #browsercontent span.tool a.delete:hover{
+	background-position:0px -64px;
+}
+
+#main #browsercontent span.tool a.send{
+
+	background-position:0px -96px;
+}
+
+#main #browsercontent span.tool a.send:hover{
+	background-position:0px -128px;
+}
+/*======================================================================*/
+.browserresize{
+	display:block;
+}
+
+.browserresize a.browserresizelarge{
+	background:url(http://g.exteen.com/i/m/bck_filebrowser_resize.png) left top no-repeat;
+	display:block;
+	float:left;
+	width:260px;
+	height:0pt !important;
+	height:10px;
+	padding-top:10px;
+	overflow:hidden;
+}
+
+/*======================================================================*/
+#main #browserinfo{
+	background:url(http://g.exteen.com/i/m/bck_newentry_filebrowser2.png) top left no-repeat;
+	height:90px;
+}
+
+#main #browserinfo .container{
+	margin:10px;
+}
+
+#main #browserinfo .imagebox{
+	background:#FFF;
+	border:1px solid #DDD;
+	float:left;
+	width:64px;
+	height:64px;
+	text-align:center;
+}
+
+#main #browserinfo .container ul{
+	font-size:11px;
+	float:left;
+	list-style:none;
+	margin-left:5px;
+}
+
+#main #browserinfo .container ul li{
+	margin-bottom:3px;
+}
+
+#main #browserinfo a.send{
+	background:url(http://g.exteen.com/i/m/button_sendtoeditor.png) no-repeat;
+	display:block;
+	overflow:hidden;
+	padding-top:29px;
+	/*Fix IE Bug*/
+	height:0pt !important;
+	height:29px;
+	width:130px;
+}
+
+#main #browserinfo a.send:hover{
+	background-position:0px -29px;
+}
+
+/*======================================================================*/
+#main #browserupload{
+	background:url(http://g.exteen.com/i/m/bck_newentry_filebrowser2.png) bottom left no-repeat;
+	border-top:1px solid #DDD;
+}
+
+#main #browserupload form{
+	margin:10px;
+}
+
+#main #browserupload h3{
+	font:12px Verdana, Tahoma, "MS Sans Serif";
+	margin-bottom:4px;
+}
+
+#main #browserupload .addupload{
+	padding:0px 0px 2px 16px;
+	background:url(http://g.exteen.com/i/m/add.gif) no-repeat;
+	height:18px;
+}
+
+/*======================================================================*/
+/*Manage page*/
+.toolbox{
+	float:left;
+	background:url(http://g.exteen.com/i/m/bck_manage_toolbox.png) repeat-x left top;
+	border-top:1px solid #b6e3ee;
+	width:100%;
+	height:30px;
+}
+
+.toolbox form .zone{
+	border-right:1px solid #61b1c5;
+	margin:3px 6px 1px 2px;
+	padding-right:6px;
+}
+
+.toolbox form .last{
+	border:none;
+}
+
+.toolbox option.top{
+	font-weight:bold;
+}
+
+.toolbox option.child{
+	padding-left:15px;
+}
+
+.toolbox input.delete{
+	font-weight:bold;
+}
+
+.top{
+	margin-top:15px;
+}
+
+#searchbox{
+	border:none;
+	
+}
+
+#entrylist{
+	float:left;
+}
+
+.managetable{
+	color:#636363;
+	width:100%;
+	border-collapse:collapse;
+	border:1px solid #d9f2f8;
+	min-width:935px;
+}
+
+.smallmanagetable{
+	min-width:660px;
+	max-width:660px;
+}
+
+.managetable th{
+	background:url(http://g.exteen.com/i/m/bck_button.png) repeat-x;
+	color:#FFF;
+	font-weight:bold;
+	padding:4px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+.managetable tr.even{
+	background:#eff9fb;
+}
+
+.managetable tr.selected{
+	background:#b6e3ee;
+}
+
+.managetable td{
+	border-top:1px solid #d9f2f8;
+	padding:4px;
+}
+
+#linklist .managetable td{
+
+	border:none;
+}
+
+.managetable a{
+	text-decoration:none;
+}
+
+.managetable tfoot tr td{
+	border-top:1px solid #b6e3ee;
+	text-align:right;
+}
+
+.managetable tfoot a{
+	margin:0px 5px 0px 5px;
+	text-decoration:underline;
+}
+
+.managetable a.delete{
+	background:url(http://g.exteen.com/i/m/icon_delete.gif) no-repeat left top;
+	padding-left:18px;
+	padding-bottom:1px;
+	margin-left:5px;	
+}
+
+.managetable a.delete:hover,#entrylist a.delete:active{
+	color:#ed1c24;
+	text-decoration:underline;
+}
+
+.managetable a.edit{
+	background:url(http://g.exteen.com/i/m/icon_edit.gif) no-repeat left top;
+	padding-left:18px;
+	padding-bottom:1px;
+}
+
+.managetable a.edit:hover{
+	text-decoration:underline;
+}
+
+.managetable th.tools,.managetable td.tools{
+	text-align:right;
+	padding-right:20px;
+}
+
+.formbox{
+	background:url(http://g.exteen.com/i/m/bck_formbox.png) repeat-x left 1px;
+	border:1px solid #b6e3ee;
+	float:left;
+	margin-bottom:10px;
+	width:100%;
+}
+
+.formbox form{
+	margin:5px;
+}
+
+.formbox h2{
+	color:#178aa5;
+	font-size:14px;
+}
+
+.formbox label{
+	float:left;
+	width:35%;
+	text-align:right;
+	margin-right:5px;
+}
+
+.formbox label.nofloat{
+	float:none;
+	width:auto;
+}
+
+.formbox input.textbox{
+	width:150px;
+}
+
+.formbox input.longer{
+	width:250px;
+}
+
+.formbox p.row{
+	border-bottom:1px solid #b6e3ee;
+	padding-bottom:3px;
+	clear:both;
+}
+
+.formbox p.last{
+	border:none;
+}
+
+.formbox span.help{
+	margin-left:35%;
+}
+/*===============================*/
+
+#entrylist span.h-comment{
+	background:url(http://g.exteen.com/i/m/icon_comment.gif) no-repeat;
+	width:16px;
+	padding-left:16px;
+}
+
+#entrylist th.title{
+	width:35%;
+}
+
+#entrylist th.tools{
+	width:15%;
+}
+
+#entrylist th.category{
+	width:15%;
+}
+
+#entrylist td{
+	padding:4px;
+}
+
+#entrylist td.category a{
+	color:#636363;
+	text-decoration:underline;
+}
+
+#entrylist span.recommend{
+	background:url(http://g.exteen.com/i/m/icon_star.gif) no-repeat;
+	width:16px;
+	height:16px;
+	padding:0px 0px 2px 16px;
+	overflow:hidden;
+}
+
+#entrylist span.timed{
+	background:url(http://g.exteen.com/i/m/icon_clock.gif) no-repeat;
+	font-size:11px;
+	padding:0px 0px 2px 16px;	
+}
+
+#entrylist a.togglestatus{
+	background:url(http://g.exteen.com/i/m/icon_toggle.gif) no-repeat;
+	font-size:11px;
+	padding:0px 0px 2px 16px;
+	text-decoration:underline;
+}
+
+#entrylist a.drafted{color:#636363;}
+#entrylist a.published{color:#6b8e24;}
+
+/*===============================*/
+#categorylist th.description{
+	width:40%;
+}
+
+#categorylist td.name{
+	font-weight:bold;
+}
+
+/*===============================*/
+#linklist th.link{
+	width:400px;
+}
+
+#linklist th.order{
+	width:2%;
+}
+
+#linklist th.checkbox{
+	width:2%;
+}
+
+#linklist th.tools{
+	width:150px;
+}
+
+#linklist td{
+	padding-bottom:7px;
+}
+
+
+#linktool form{
+	margin:2px;
+}
+
+#linktool a.icon{
+	background:url(http://g.exteen.com/i/m/icon_arrows.gif) no-repeat;
+	cursor:pointer;
+	font-size:12px;
+	padding:1px 1px 3px 18px;
+}
+
+#linktool a.top{background-position:0px 0px;}
+#linktool a.up{background-position:0px -32px;}
+#linktool a.down{background-position:0px -64px;}
+#linktool a.bottom{background-position:0px -96px;}
+
+#linktool form .zone{
+	height:20px;
+}
+
+#linktool form .right{
+	border:none;
+	float:right;
+}
+
+/*===============================*/
+
+#memberlist tr.section{
+	background:url(http://g.exteen.com/i/m/bck_share_section.png) #61b1c5 repeat-x left top;
+}
+
+#memberlist tr.section td{
+	border-bottom:1px solid #61b1c5 !important;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#memberlist td.username{
+	background:url(http://g.exteen.com/i/m/icon_rank.gif) no-repeat;
+	padding-left:25px;
+}
+
+#memberlist td.owner{background-position:0px 2px;}
+#memberlist td.editor{background-position:0px -30px;}
+#memberlist td.writer{background-position:0px -62px;}
+#memberlist td.reader{background-position:0px -94px;}
+
+#memberlist .note{
+	font-size:11px;
+}
+
+#memberlist a.promote, #memberlist a.demote{
+	background:url(http://g.exteen.com/i/m/icon_rank_action.gif) no-repeat left top;
+	padding-left:16px;
+}
+
+#memberlist a.promote{background-position:0px 0px;}
+#memberlist a.demote{background-position:0px -32px;}
+/*======================================================================*/
+/* Stat page */
+.formbox .container{
+	margin:5px;
+}
+
+.statsummary label{
+	background:url(http://g.exteen.com/i/m/icon_stat.gif) no-repeat left top;
+	float:left;
+	text-align:left;
+	padding-left:18px;
+	width:60%;
+}
+
+.statsummary label.pageview{background-position:0px 0px;}
+.statsummary label.session{background-position:0px -32px;}
+.statsummary label.comment{background-position:0px -64px;}
+.statsummary label.entry{background-position:0px -96px;}
+.statsummary label.avgcomment{background-position:0px -128px;}
+.statsummary label.date{background-position:0px -192px;}
+.statsummary label.space{background-position:0px -224px;}
+.statsummary label.feedsubs{background-position:0px -256px;}
+
+.statsummary .number{
+	font-weight:bold;
+}
+
+.statsummary .green{
+	color:#5fca6d;
+}
+
+.statsummary .yellow{
+	color:#c4bd4d;
+}
+
+.statsummary .red{
+	color:#fc4108;
+}
+
+.statsummary .row{
+	border-bottom:1px solid #b6e3ee;
+}
+
+#title h2, #monthsummary h2{
+	background:url(http://g.exteen.com/i/m/icon_stat.gif) no-repeat 0px -160px;
+	font-size:14px;
+	margin:5px;
+	padding-left:18px;
+}
+
+#monthsummary{
+	display:block;
+	float:left;
+	height:10em;
+}
+
+#monthsummary .zone{
+	border-right:1px solid #b6e3ee;
+	float:left;
+	width:48%;
+}
+
+#monthsummary .last{
+	border:none;
+}
+
+/*======================================================================*/
+/* File Page */
+
+#main .butleft{
+	float:left;
+}
+
+#main .butright{
+	float:right;
+}
+
+#folderbrowser{
+	background:url(http://g.exteen.com/i/m/bck_manage_toolbox.png) repeat-x;
+	border:1px solid #b6e3ee;
+	border-right:none;
+	float:left;
+	width:100%;
+	height:375px;
+	overflow:auto;
+}
+
+#folderbrowser h3{
+	background:url(http://g.exteen.com/i/m/icon_home.gif) no-repeat;
+	padding:0px 0px 0px 20px;
+	font-weight:bold;
+}
+
+#folderbrowser ul{
+	list-style:none;
+	margin:5px;
+}
+
+#folderbrowser li{
+	background:url(http://g.exteen.com/i/m/icon_folder.gif) no-repeat;
+	padding:0px 0px 0px 40px;
+}
+
+#folderbrowser li.selected{
+	background:url(http://g.exteen.com/i/m/icon_folder_selected.gif) no-repeat;
+}
+
+#folderbrowser li a:link, #folderbrowser li a:visited{
+	color:#636363;
+	text-decoration:none;
+}
+
+#folderbrowser li a:hover, #folderbrowser li a:active{
+	color:#30c2e7;
+	text-decoration:underline;
+}
+
+#folderbrowser li.selected a{
+	color:#178aa5;
+	font-weight:bold;
+}
+
+#folderbrowser li.selected li a{
+	color:#636363;
+	font-weight:normal;
+}
+
+
+#folderbrowser ul ul{
+	margin:0px 0px 0px -22px;
+}
+
+#filelist .scroll{
+	float:left;
+	height:315px;
+	width:100%;
+	overflow:auto;
+}
+
+.managetable .hide{
+	display:none;
+}
+
+.managetable th.filename,.managetable td.filename{width:40%}
+.managetable th.filesize,.managetable td.filesize{width:15%}
+.managetable th.dimension,.managetable td.dimension{width:15%}
+.managetable th.filetools,.managetable td.filetools{width:25%;text-align:right;}
+.managetable th.checkbox,.managetable td.checkbox{width:5%}
+
+.file a.name{
+	background:url(http://g.exteen.com/i/m/icon_filetype.gif) no-repeat;
+	padding:0px 0px 2px 20px;
+	float:left;
+}
+
+.file a.folder{background-position:-16px -32px;}
+.file a.newfolder{background-position:-16px -64px;}
+.file a.folderup{background-position:-16px -192px;}
+.file a.jpg, .file a.gif, .file a.png{background-position:-16px -96px;}
+.file a.swf{background-position:-16px -160px;}
+.file a.html{background-position:-16px -128px;}
+
+a.folder,a.newfolder,a.folderup{font-weight:bold}
+
+#uploadbox{
+	border:1px solid #b6e3ee;
+	height:auto;
+}
+
+#uploadbox form{
+	margin:5px;
+}
+
+input.inputfile{
+	font-size:12px;
+}
+
+/*======================================================================*/
+/* Theme */
+#myslotbox{
+	background:#ebf7fc;
+	border:none;
+}
+.slot{
+	background:url(http://g.exteen.com/i/m/bck_slotbox.png) no-repeat left top;
+	display:inline;
+	float:left;
+	width:220px;
+	height:220px;
+}
+
+.slotbox h2{
+	background:url(http://g.exteen.com/i/m/icon_slot.gif) no-repeat left top;
+	margin:5px;
+	padding-left:20px;
+}
+
+.avtheme h2{
+	background:url(http://g.exteen.com/i/m/icon_slot.gif) no-repeat left -32px;
+	margin:5px;
+	padding-left:20px;
+}
+
+
+.slotcontainer{
+	float:left;
+	margin-bottom:10px;
+}
+
+.slotcontainer .sfirst{
+	margin-left:13px;
+	margin-right:10px;
+}
+
+.slotcontainer .slot{
+	margin-right:10px;
+}
+
+.slotcontainer .slast{
+	margin:0px;
+}
+
+.slotcontainer .selected{
+	background:url(http://g.exteen.com/i/m/bck_slotbox.png) no-repeat right top;
+}
+
+.slotcontainer .selected div.delete{
+	display:none;
+}
+
+.slotcontainer .empty{
+	background:url(http://g.exteen.com/i/m/bck_slotbox.png) no-repeat left bottom;
+}
+
+#avtheme{
+	background:none;
+}
+
+#avtheme .slotcontainer .slot{
+	background:none;
+}
+
+#avtheme .slotcontainer div.slot:hover{
+	background:#ebf7fc;
+}
+
+.slotcontainer p.row{
+	border:none;
+}
+
+.slot .contentwrapper{
+	margin:10px;
+}
+
+.slot .delete{
+	float:right;
+}
+
+.slot .buttons{
+	margin-top:15px !important;
+	margin-top:10px;
+}
+
+.slot .preview img{
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+
+.slot .name{
+	font-weight:bold;
+	float:left;
+}
+
+.slot a.activate{
+	background:url(http://g.exteen.com/i/m/button_themeactivate.png) no-repeat left top;
+	float:left;
+	width:86px;
+	height:28px;
+	text-indent:-9999px;
+}
+
+.slot a.activate:hover{
+	background:url(http://g.exteen.com/i/m/button_themeactivate.png) no-repeat left bottom;
+}
+
+.selected a.activate,.selected a.activate:hover{
+	background:url(http://g.exteen.com/i/m/button_themeactivated.png) no-repeat left top;
+}
+
+.slot a.edit{
+	background:url(http://g.exteen.com/i/m/button_themeedit.png) no-repeat left top;
+	float:right;
+	width:86px;
+	height:28px;
+	text-indent:-9999px;
+}
+
+.slot a.edit:hover{
+	background:url(http://g.exteen.com/i/m/button_themeedit.png) no-repeat left bottom;
+}
+
+.slot a.copy{
+	background:url(http://g.exteen.com/i/m/button_themecopy.png) no-repeat left top;
+	float:left;
+	width:134px;
+	height:28px;
+	margin-left:35px;
+	text-indent:-9999px;
+}
+
+.slot a.copy:hover{
+	background:url(http://g.exteen.com/i/m/button_themecopy.png) no-repeat left bottom;	
+}
+
+.slot .detail{
+	color:#999;
+	font:9px Verdana,Tahoma,"MS Sans Serif";
+}
+/*====================================*/
+#errormsg{
+	padding:5px;
+	text-align:left;
+}
+
+#errormsg ol{
+	list-style:inside decimal;
+	margin:10px;
+}
+
+#errormsg p{
+	margin-top:10px;
+}
+
+/*====================================*/
+#layout{
+	background:#F3F3F3;
+	border:1px solid #CCC;
+	width:760px !important;
+	width:762px;
+	/* height:350px; */
+	margin:10px 0px 20px 90px;
+}
+
+#layout .menu{
+	background:#ebf7fc;
+	border:1px solid #60b0c4;
+}
+
+#layout #top,#layout #bottom{
+	height:50px;
+	float:left;
+	width:750px !important;
+	width:745px;
+	margin:5px;
+}
+
+#layout #sidebar,#layout #sidebar2{
+	height:200px;
+	float:left;
+	width:200px;
+	margin:5px;
+}
+
+#layout #content{
+	background:#CCC;
+	height:200px;
+	float:left;
+	width:325px;
+	margin:5px;
+}
+
+#layout ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:inherit;
+}
+
+#layout li{
+	background:#b6e3ee;
+	display:block;
+	list-style:none;
+	margin:0px 4px 4px 4px !important;
+	margin:0px 4px 0px 4px;
+	padding:3px;
+	cursor:pointer;
+	height:auto !important;
+	height:20px;
+}
+
+#layout h3{
+	color:#178aa5;
+	font:10px Verdana,Tahoma,"MS Sans Serif";
+	margin:3px 0px 0px 3px;
+}
+
+#layout a.delete, #layout a.config{
+	float:right;
+}
+
+#layout a.delete{
+	background:url(http://g.exteen.com/i/m/icon_delete.gif) no-repeat left top;
+	text-indent:-9999px;
+	width:16px;
+	height:16px;
+}
+
+#layout a.config{
+	background:url(http://g.exteen.com/i/m/icon_edit.gif) no-repeat left top;
+	text-indent:-9999px;
+	width:16px;
+	height:16px;
+	margin-right:5px;
+}
+
+
+#layout span.name{
+	float:left;
+	font:12px Verdana,Tahoma,"MS Sans Serif";
+	padding:0px 0px 2px 20px;
+}
+
+span.official{
+	background:url(http://g.exteen.com/i/m/icon_widget_official.gif) no-repeat;
+}
+
+#avwidgets{
+	padding-bottom:10px;
+}
+
+#avwidgets h2{
+	background:url(http://g.exteen.com/i/m/icon_slot.gif) no-repeat left -32px;
+	margin:10px;
+	padding-left:20px;
+}
+
+#avwidgets h3{
+	margin-left:10px;
+}
+
+#avwidgets .widget{
+	font:11px Verdana,Tahoma,"MS Sans Serif";
+	margin:5px 5px 5px 5px;
+	float:left;
+	width:140px;
+	height:25px;
+	background:#b6e3ee;
+	cursor:pointer;
+	position:relative;
+	left:0px;top:0px;
+}
+
+.widget span.name{
+	display:block;
+	font-weight:bold;
+	margin:5px 5px 0px 5px;
+	padding:0px 0px 3px 20px;
+}
+
+.widget span.description{
+	display:block;
+	margin:0px 5px 5px 5px;
+}
+
+
+/*====================================*/
+#csseditor{
+	text-align:center;
+}
+
+
+/*======================================================================*/
+.popup{
+	width:300px;
+}
+
+.formbox .twocol{
+	width:145px;
+	float:left;
+}
+
+/*======================================================================*/
+/*Add for configtheme*/
+.wizard{
+	text-align:center;
+}
+
+.cftheme{
+	width:760px;
+	margin:auto !important;
+	margin:0px 0px 0px 90px;
+}
+
+.cftheme h3{
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:1px solid #CCC;
+	background:#FFF;
+	float:left;
+	width:100%;
+	margin-bottom:5px;
+}
+
+.cftheme .fzone{
+	background:#EEE;
+	margin-bottom:10px;
+}
+
+.cftheme p.frow{
+	margin:5px;
+	clear:both;
+}
+
+.cftheme span.fhelp{
+	font-size:11px;
+	color:#333333;
+}
+
+.cftheme label{
+	width:200px;
+	text-align:right;
+	float:left;
+	margin-right:5px;
+	font-weight:bold;
+	height:2em;
+}
+
+.cftheme label.normal{
+	width:auto;
+	float:none;
+	text-align:left;
+	font-weight:bold;
+	height:auto;
+}
+
+a.cp-box div {
+	height:20px;
+}
+
+.colorpick{
+	width:300px;
+	height:20px;
+	float:left;
+}
+
+/*======================================================================*/
+/*======================================================================*/
+#footer{
+	background:url(http://g.exteen.com/i/m/bck_button.png) #222 bottom repeat-x;
+	/*background:url(http://g.exteen.com/i/m/bck_hdot.gif) #FFF top repeat-x;/**/
+	background:url(http://g.exteen.com/i/m/bck_button.png) #FFF bottom repeat-x;
+	float:left;
+	margin-top:30px;
+	padding-top:4px;
+	text-align:center;
+	width:100%;
+}
+
+#footer .ads{
+	display:none;
+}
+
+#footer .claim{
+	color:#CCC;
+	font-size:11px;
+	margin:auto;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:5px;
+	text-align:left;
+	width:935px;
+}
+/*======================================================================*/
+
+
+
+
+
+
+
+
+
+.help{
+	display:block;
+	background:url(http://g.exteen.com/i/m/icon_help.gif) #edfad3 1px 1px no-repeat;
+	border:1px solid #daedb4;
+	color:#636363;
+	font-size:11px;
+	padding:3px 3px 3px 18px;
+	margin:1px;
+	display:none; /**/
+}
+
+.tips{
+	float:right;
+	font:10px Verdana,Tahoma,"MS Sans Serif";
+	list-style:none;
+	margin-top:4px;
+	text-align:right;
+	width:200px;
+}
+
+.tips a{
+	background:url(http://g.exteen.com/i/m/icon_help.gif) 1px 1px no-repeat;
+	padding:3px 0px 5px 20px;
+	text-decoration:underline;
+}
+
+.hidetooltip{
+	display:none;
+}
+
+.showtooltip{
+	display:block;
+}
+
+.setting .help{display:block;}
+.setting .showtooltip, .setting .hidetooltip{display:none;}
+.setting h1{padding-top:5px;}
+
