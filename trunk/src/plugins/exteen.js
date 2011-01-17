@@ -19,6 +19,11 @@ Jerboa.register("Exteen",function(sandbox){
 				}
 				sandbox.insertHTML(code);
 			};
+			window._chmode = window.chmode;
+			window.chmode = function(mode){
+				document.getElementById("elm1").value = Jerboa.getContent();
+				window._chmode(mode);
+			};
 		}
 	};
 	this.destroy = function() {};
