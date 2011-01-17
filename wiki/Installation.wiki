@@ -1,13 +1,51 @@
 #summary How to install Jerboa
 #labels Phase-Deploy
 = Exteen =
-== Step 1 ==
+== Using GreaseMonkey ==
+=== Step 1 ===
 Download [http://jerboa-editor.googlecode.com/files/jerboa_for_exteen.user.js jerboa_for_exteen.user.js]
 
-== Step 2 ==
+=== Step 2 ===
 Install *jerboa_for_exteen.user.js* in your [http://userscripts.org/about/installing GreaseMonkey]
 
-== Step 3 ==
+=== Step 3 ===
 Login and Click *Enable Jerboa* 
+And Enjoy :)
+ 
+== Other ways ==
+=== Step 1 ===
+Open your console
+  * *Google Chrome* press _Ctrl+Shift+i_
+  * *Opera* press _Ctrl+Shift+i_
+  * *Safari* press _Ctrl+Shift+i_
+  * *Firefox* press _F12_ (Firebug)
 
+=== Step 2 ===
+Enter Code 
+{{{
+var a = document.createElement("script"),b;
+		a.setAttribute("src","http://jerboa-editor.googlecode.com/svn/trunk/build/loader.js");
+		document.getElementsByTagName("head")[0].appendChild(a);
+		a = document.createElement("script");
+		a.innerHTML = "toggleJerboa = function(){"+
+			"var a=document.getElementById(\"jb-toggle\");if(a.innerHTML == \"Enable Jerboa\"){"+
+			"Jerboa.apply(\"elm1\");a.innerHTML=\"Disable Jerboa\";} else {a.innerHTML = \"Enable Jerboa\";Jerboa.dismiss();}"+
+			"};"+
+			"loadExteen = function(){"+
+			"if(window.Jerboa){window.Jerboa.load(\"plugins/exteen\");}"+
+			"else{setTimeout(loadExteen,1000);}"+
+			"};"+
+			"loadExteen();";
+		document.getElementsByTagName("head")[0].appendChild(a);
+		a = document.createElement("div");
+		a.setAttribute("style","float:right;cursor:pointer;");
+		a.setAttribute("onclick","toggleJerboa();return false;");
+		a.innerHTML = "<a id=\"jb-toggle\" href=\"#\">Enable Jerboa</a>";
+		b = document.getElementById("errormsg");
+		b.removeChild(b.children[1]);
+		b.insertBefore(a,b.children[1]);
+}}}
+
+=== Step 3 ===
+Login and Click *Enable Jerboa* 
 And Enjoy :)
