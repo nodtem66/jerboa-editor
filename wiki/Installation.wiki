@@ -1,6 +1,13 @@
-#summary Installation: Using GreaseMonkey
+#summary How to install Jerboa
 #labels Phase-Deploy
+= Exteen =
+== Step 1 ==
+Download [http://jerboa-editor.googlecode.com/files/jerboa_for_exteen.user.js jerboa_for_exteen.user.js]
 
-= Step 1 =
-Download [Userscript.js]
-= Step 2 =
+== Step 2 ==
+Install *jerboa_for_exteen.user.js* in your [http://userscripts.org/about/installing GreaseMonkey]
+
+== Step 3 ==
+Login and Click *Enable Jerboa* 
+
+And Enjoy :)
