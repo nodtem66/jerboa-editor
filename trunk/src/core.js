@@ -1201,6 +1201,7 @@ var Jerboa = (function(my){
 	};//}}}
 	var dbclick = function(e) {//{{{
 		var event = lib.getEvent(e),exit = false;
+		if(event.target.nodeName.toLowerCase() == "html") {restoreNormalState();return false;}
 		if(!lib.hasClass(event.target,"jb-ignore"))
 		{
 			var _root = event.target;
@@ -1237,9 +1238,9 @@ var Jerboa = (function(my){
 				//$.Events.add(_root,"blur",Jerboa.restoreNormalState);
 
 				//Jerboa.toggle.menu.call(Jerboa,"text");
-				if(_root.children.length != 1) {_root.innerHTML = "<div>"+_root.innerHTML+"</div>";}
-				_root.children[0].setAttribute("contenteditable","true");
-				_root.children[0].focus();
+				if(_root.childNodes.length != 1) {_root.innerHTML = "<div>"+_root.innerHTML+"</div>";}
+				_root.childNodes[0].setAttribute("contenteditable","true");
+				_root.childNodes[0].focus();
 				stage.currentState = "textedit";
 				sandbox.notify("textedit");
 				break;
