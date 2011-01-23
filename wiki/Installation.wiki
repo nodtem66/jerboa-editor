@@ -1,5 +1,27 @@
 #summary How to install Jerboa
 #labels Phase-Deploy
+= General =
+=== Step 1 ===
+Open your console
+  * *Google Chrome* press _Ctrl+Shift+i_
+  * *Opera* press _Ctrl+Shift+i_
+  * *Safari* press _Ctrl+Shift+i_
+  * *Firefox* press _F12_ (Firebug)
+
+=== Step 2 ===
+Enter Code 
+{{{
+var a = document.createElement("script"),b;
+                a.setAttribute("src","http://jerboa-editor.googlecode.com/svn/trunk/build/loader.js");
+                document.getElementsByTagName("head")[0].appendChild(a);
+}}}
+
+=== Step 3 ===
+Login and Click *Enable Jerboa* 
+
+And Enjoy :)
+----
+----
 = Exteen =
 == Using GreaseMonkey ==
 === Step 1 ===
@@ -12,7 +34,7 @@ Install *jerboa_for_exteen.user.js* in your [http://userscripts.org/about/instal
 Login and Click *Enable Jerboa* 
 
 And Enjoy :)
- 
+----
 == Other ways ==
 === Step 1 ===
 Open your console
@@ -51,3 +73,4 @@ var a = document.createElement("script"),b;
 Login and Click *Enable Jerboa* 
 
 And Enjoy :)
+----
