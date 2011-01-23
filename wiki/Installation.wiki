@@ -12,9 +12,10 @@ Open your console
 Enter Code 
 {{{
 var a = document.createElement("script"),b;
-                a.setAttribute("src","http://jerboa-editor.googlecode.com/svn/trunk/build/loader.js");
+                a.setAttribute("src","http://www.mwit.ac.th/~fieldtrip/jb/build/loader.js");
                 document.getElementsByTagName("head")[0].appendChild(a);
 }}}
+_thanks MWIT school for hosting ;)_
 
 === Step 3 ===
 Login and Click *Enable Jerboa* 
