@@ -1,0 +1,13 @@
+#summary list api functions for core 0.001
+#sidebar APIlist
+<wiki:toc max_depth="5" /> 
+= Base Library =
+==onDomReady(callback)==
+ When Webpage has loaded already, run callback (function)
+ 
+ *exmaple*
+{{{
+lib.onDomReady(function(){
+ //javascript code here
+});
+}}}
