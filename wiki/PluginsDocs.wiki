@@ -9,7 +9,7 @@ Plugins / Modules `<===>`  Sandbox `<>` Application Core
 
 = Plugins Structure =
 *Rules*
- # *Every plugins implement with [ApiDocs#Module Module Interface]*
+ # *Every plugins implements with [ApiDocs#Module Module Interface]*
 
 *Code Structure*
 {{{
