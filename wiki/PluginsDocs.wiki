@@ -1,0 +1,30 @@
+#summary How to write your plugins
+#labels Implementation
+
+= Program Strcuture =
+
+Browser `<===>` Base Library `<===` Application Core `<>` Sandbox
+
+Plugins / Modules `<===>`  Sandbox `<>` Application Core
+
+= Plugins Structure =
+*Rules*
+ # *Every plugins implement with [ApiDocs#Module Module Interface]*
+
+*Code Structure*
+{{{
+Jerboa.register("moduleName",function(sandbox){
+ /*In this scope your module have to connect to application core or base 
+library through only a sandbox*/
+
+ var lib = sandbox.lib; 
+ var init = function(){
+  //this code will run when plugin loaded
+ }
+ var destroy = function(){
+  //this code will run when plugin ended
+ }
+});
+}}}
+
+*More Information about API function see [ApiDocs#Sandbox Sandbox] and [ApiDocs#Base_Library Base Library]*
