@@ -1,5 +1,5 @@
 #summary How to install Jerboa
-#labels Phase-Deploy
+#labels Phase-Deploy,Featured
 = General =
 For more installation details see 
 http://code.google.com/p/jerboa-editor/downloads/detail?name=UserGuide.pdf
