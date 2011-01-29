@@ -212,7 +212,7 @@ bar = lib.curry(foo,null,false,5)
 //bar(6,1)=> 10 (from 5+6-1) 
 
 bar = lib.curry(foo,null,false,5,8)
-bar(9)=> 4 (from 5+8-9)
+//bar(9)=> 4 (from 5+8-9)
 
 //3.1 Limit in 100 msec can run function in 1 time.
 lib.curry(function,null,100)
@@ -440,4 +440,9 @@ sandbox.insertHTML("test");
 == Properties ==
 === lib ===
  a Base Libray Object [ApiDocs#Base_Library Base Library]
+
+ _Example_
+{{{
+sandbox.lib.curry(callback,sandbox,0);
+}}}
 ----
