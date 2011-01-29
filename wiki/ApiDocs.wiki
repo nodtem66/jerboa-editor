@@ -1,13 +1,131 @@
 #summary list api functions for core 0.001
-#sidebar APIlist
+=Table of Content=
 <wiki:toc max_depth="5" /> 
 = Base Library =
+==env==
+ An Object to tell what kind of a browse is
+
+ _Properties_
+ * env.ie  `true` if browser is IE
+ * env.ie6 `true` if browser is IE6
+ * env.ie7 `true` if browser is IE7
+ * env.ie8 `true` if browser is IE8
+ * env.firefox `true` if browser is firefox
+ * env.opera `true` if browser is opera
+ * env.webkit `true` if browser uses webkit engine
+ * env.camino `true` if browser uses Camino engine
+
+ _Exmaple_
+{{{
+if(lib.env.ie){
+ //Do something
+}
+}}}
 ==onDomReady(callback)==
  When Webpage has loaded already, run callback (function)
  
- *exmaple*
+ _Example_
 {{{
 lib.onDomReady(function(){
  //javascript code here
 });
 }}}
+==addEvent(element,eventType,callback)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==removeEvent(element,eventType,callback)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==getEvent(eventVariable)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==addClass(element,strClassName)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==removeClass(element,strClassName)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==hasClass(element,strClassName)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==addStyle(element,objStyle)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==removeStyle(element,objStyle)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==setNode(element,objSetting)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==request(objSetting)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==detectMedia(element)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+==curry(callback,scope,time_to_throttle,...)==
+ Desc
+
+ _Properties_
+
+ _example_
+{{{
+}}}
+= Application Core=
+= Sandbox =
+= Module =
